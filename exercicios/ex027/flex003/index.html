@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            /* flex-direction: row; */ /* main-axis -> esquerda para a direita, cross-axis -> cima para baixo */
+            /* flex-direction: row-reverse; */ /* main-axis -> direita para a esquerda, cross-axis -> cima para baixo */
+            /* flex-direction: column; */ /* main-axis -> cima para a baixo, cross-axis -> esquerda para a direita */
+            /* flex-direction: column-reverse; */ /* main-axis -> baixo para a cima, cross-axis -> esquerda para a direita */
+            /* flex-wrap: wrap; */ /* quebra no setido do cross-axis*/
+            /* flex-wrap: wrap-reverse; */ /* quebra sentido contrário ao cross-axis */
+
+            flex-flow: row wrap-reverse; /* flex-direction: row; flex-wrap: wrap-reverse;*/
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
