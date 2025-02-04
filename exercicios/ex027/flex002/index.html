@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            flex-direction: row-reverse; /* main-axis -> direita para a esquerda, cross-axis -> cima para baixo */
+            /* flex-direction: column-reverse; */ /* main-axis -> baixo para cima, cross-axis -> esquerda para direita */
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
