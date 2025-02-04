@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+           
+
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            flex-flow: row wrap;
+            /* align-content: flex-start; */ /* posiciona elementos no cross-start */
+            /* align-content: center; */ /* posiciona elementos no centro do cross-axis */
+            /* align-content: flex-end; */ /* posiciona elementos no cross-end */
+            /* align-content: space-around; */ /* adiciona espaço entre em volta dos elementos no cross-axis */
+            /* align-content: space-between; */ /* adiciona espaço entre os elementos, fora cross-start e cross-end */
+            align-content: space-evenly; /* adiciona espaço entre os elementos, incluindo cross-start e cross-end*/
+            /* align-content: stretch; */ /* configuração padrão, estica elementos */
+            height: 400px;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
