@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            height: 300px;
+            flex-flow: row nowrap;
+            /* justify-content: flex-start; */ /* definido por padrão, posiciona conteúdo no início */
+            /* justify-content: center; */ /* posiciona conteúdo no meio */
+            justify-content: space-around; /* insere espaço em volta dos elementos com base no eixo principal */
+            /* justify-content: space-between; */ /* insere espaço entre elementos, fora main-start e main-end */
+            /* justify-content: space-evenly */ /* insere espaço entre elementos, incluindo main-start e main-end */
+            /* align-items: stretch; */ /* definido por padrão, estica elementos */
+            /* align-items: flex-end; */ /* posiciona elementos no cross-start */
+            align-items: center; /* posiciona elementos no centro do container*/
+            /* align-items: flex-end; */ /* posiciona elementos no cross-end */
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
