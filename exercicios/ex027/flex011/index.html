@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        div#cxA {
+            flex-shrink: 3; /* diminui em uma proporção 3/1 pois há um elemento com flex-shrink de valor 1 */
+            flex-grow: 3;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 5; /* aumenta em uma proporção 5/3/1 pois há um elemento com flex-grow de valor 3 e flex-grow de valor 1 */
+        }
+
+        div#cxB {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxB">C</div>
+    </div>
+</body>
+</html>
