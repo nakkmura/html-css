@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* Transforma caixa em flexbox (e é aplicado apenas no pai) */
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#i1 {
+            order: 0; /* 3º item */
+        }
+
+        div#i2 {
+            order: -2; /* 2º item */
+        }
+
+        div#i3 {
+            order: 4; /* 6º item */
+        }
+
+        div#i4 {
+            order: 8; /* 7º item */
+        }
+
+        div#i5 {
+            order: 2; /* 5º item */
+        }
+
+        div#i6 {
+            order: 0; /* 4º item */
+        }
+
+        div#i7 {
+            order: -4; /* 1º item */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
