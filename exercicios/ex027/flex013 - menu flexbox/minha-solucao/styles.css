@@ -51,6 +51,15 @@ button {
     background-color: black;
 }
 
+.header-container button:hover {
+    border: 0;
+    border-radius: 4px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(172, 172, 172);
+    transition: background-color .25s;
+}
+
 .nav-container {
     display: flex;
     flex-flow: row wrap;
